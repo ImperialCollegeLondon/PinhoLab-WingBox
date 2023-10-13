@@ -1,0 +1,19 @@
+*Heading
+*Preprint, echo=NO, model=NO, history=NO, contact=NO
+*INCLUDE, Input=./bulk/inc_part_rearspar.inp
+*INCLUDE, Input=./bulk/inc_part_rib3.inp
+*INCLUDE, Input=./bulk/inc_part_rib4.inp
+*INCLUDE, Input=./bulk/inc_part_rib5.inp
+*INCLUDE, Input=./bulk/inc_part_rib6.inp
+*INCLUDE, Input=./bulk/inc_part_rib7.inp
+*INCLUDE, Input=./bulk/inc_part_uppercover.inp
+*INCLUDE, Input=./bulk/inc_part_upperstringer15.inp
+*INCLUDE, Input=./bulk/inc_part_upperstringer16.inp
+*INCLUDE, Input=./bulk/inc_part_upperstringer17.inp
+*INCLUDE, Input=./bulk/inc_part_upperstringer19.inp
+*INCLUDE, Input=./bulk/inc_part_upperstringer20.inp
+*INCLUDE, Input=./bulk/inc_part_upperstringer21.inp
+*INCLUDE, Input=./bulk/inc_assembly.inp
+*INCLUDE, Input=./bulk/inc_materials.inp
+*INCLUDE, Input=./bulk/inc_interactions.inp
+*INCLUDE, Input=./bulk/inc_step.inp

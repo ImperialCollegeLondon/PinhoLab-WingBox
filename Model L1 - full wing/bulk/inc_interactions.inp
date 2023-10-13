@@ -1,0 +1,153 @@
+** INTERACTION PROPERTIES
+** 
+*Surface Interaction, name="surf2surf property"
+1.,
+** 
+** INTERACTIONS
+** 
+** Interaction: front spar bottom
+*Contact Pair, interaction="surf2surf property", type=SURFACE TO SURFACE, adjust="front spar".adjust_set_bottom, tied
+"front spar".slave_surf_bottom, "lower cover".master_surf
+** Interaction: front spar top
+*Contact Pair, interaction="surf2surf property", type=SURFACE TO SURFACE, adjust="front spar".adjust_set_top, tied
+"front spar".slave_surf_top, "upper cover".master_surf
+** Interaction: lower stringer 1
+*Contact Pair, interaction="surf2surf property", type=SURFACE TO SURFACE, adjust="lower stringer 1".adjust_set, tied
+"lower stringer 1".slave_surf, "lower cover".master_surf
+** Interaction: lower stringer 2
+*Contact Pair, interaction="surf2surf property", type=SURFACE TO SURFACE, adjust="lower stringer 2".adjust_set, tied
+"lower stringer 2".slave_surf, "lower cover".master_surf
+** Interaction: lower stringer 3
+*Contact Pair, interaction="surf2surf property", type=SURFACE TO SURFACE, adjust="lower stringer 3".adjust_set, tied
+"lower stringer 3".slave_surf, "lower cover".master_surf
+** Interaction: lower stringer 4
+*Contact Pair, interaction="surf2surf property", type=SURFACE TO SURFACE, adjust="lower stringer 4".adjust_set, tied
+"lower stringer 4".slave_surf, "lower cover".master_surf
+** Interaction: lower stringer 5
+*Contact Pair, interaction="surf2surf property", type=SURFACE TO SURFACE, adjust="lower stringer 5".adjust_set, tied
+"lower stringer 5".slave_surf, "lower cover".master_surf
+** Interaction: lower stringer 6
+*Contact Pair, interaction="surf2surf property", type=SURFACE TO SURFACE, adjust="lower stringer 6".adjust_set, tied
+"lower stringer 6".slave_surf, "lower cover".master_surf
+** Interaction: lower stringer 7
+*Contact Pair, interaction="surf2surf property", type=SURFACE TO SURFACE, adjust="lower stringer 7".adjust_set, tied
+"lower stringer 7".slave_surf, "lower cover".master_surf
+** Interaction: lower stringer 8
+*Contact Pair, interaction="surf2surf property", type=SURFACE TO SURFACE, adjust="lower stringer 8".adjust_set, tied
+"lower stringer 8".slave_surf, "lower cover".master_surf
+** Interaction: lower stringer 9
+*Contact Pair, interaction="surf2surf property", type=SURFACE TO SURFACE, adjust="lower stringer 9".adjust_set, tied
+"lower stringer 9".slave_surf, "lower cover".master_surf
+** Interaction: lower stringer 10
+*Contact Pair, interaction="surf2surf property", type=SURFACE TO SURFACE, adjust="lower stringer 10".adjust_set, tied
+"lower stringer 10".slave_surf, "lower cover".master_surf
+** Interaction: lower stringer 11
+*Contact Pair, interaction="surf2surf property", type=SURFACE TO SURFACE, adjust="lower stringer 11".adjust_set, tied
+"lower stringer 11".slave_surf, "lower cover".master_surf
+** Interaction: lower stringer 12
+*Contact Pair, interaction="surf2surf property", type=SURFACE TO SURFACE, adjust="lower stringer 12".adjust_set, tied
+"lower stringer 12".slave_surf, "lower cover".master_surf
+** Interaction: lower stringer 13
+*Contact Pair, interaction="surf2surf property", type=SURFACE TO SURFACE, adjust="lower stringer 13".adjust_set, tied
+"lower stringer 13".slave_surf, "lower cover".master_surf
+** Interaction: lower stringer 14
+*Contact Pair, interaction="surf2surf property", type=SURFACE TO SURFACE, adjust="lower stringer 14".adjust_set, tied
+"lower stringer 14".slave_surf, "lower cover".master_surf
+** Interaction: lower stringer 15
+*Contact Pair, interaction="surf2surf property", type=SURFACE TO SURFACE, adjust="lower stringer 15".adjust_set, tied
+"lower stringer 15".slave_surf, "lower cover".master_surf
+** Interaction: lower stringer 16
+*Contact Pair, interaction="surf2surf property", type=SURFACE TO SURFACE, adjust="lower stringer 16".adjust_set, tied
+"lower stringer 16".slave_surf, "lower cover".master_surf
+** Interaction: lower stringer 17
+*Contact Pair, interaction="surf2surf property", type=SURFACE TO SURFACE, adjust="lower stringer 17".adjust_set, tied
+"lower stringer 17".slave_surf, "lower cover".master_surf
+** Interaction: lower stringer 18
+*Contact Pair, interaction="surf2surf property", type=SURFACE TO SURFACE, adjust="lower stringer 18".adjust_set, tied
+"lower stringer 18".slave_surf, "lower cover".master_surf
+** Interaction: lower stringer 19
+*Contact Pair, interaction="surf2surf property", type=SURFACE TO SURFACE, adjust="lower stringer 19".adjust_set, tied
+"lower stringer 19".slave_surf, "lower cover".master_surf
+** Interaction: lower stringer 20
+*Contact Pair, interaction="surf2surf property", type=SURFACE TO SURFACE, adjust="lower stringer 20".adjust_set, tied
+"lower stringer 20".slave_surf, "lower cover".master_surf
+** Interaction: lower stringer 21
+*Contact Pair, interaction="surf2surf property", type=SURFACE TO SURFACE, adjust="lower stringer 21".adjust_set, tied
+"lower stringer 21".slave_surf, "lower cover".master_surf
+** Interaction: lower stringer 22
+*Contact Pair, interaction="surf2surf property", type=SURFACE TO SURFACE, adjust="lower stringer 22".adjust_set, tied
+"lower stringer 22".slave_surf, "lower cover".master_surf
+** Interaction: rear spar bottom
+*Contact Pair, interaction="surf2surf property", type=SURFACE TO SURFACE, adjust="rear spar".adjust_set_bottom, tied
+"rear spar".slave_surf_bottom, "lower cover".master_surf
+** Interaction: rear spar top
+*Contact Pair, interaction="surf2surf property", type=SURFACE TO SURFACE, adjust="rear spar".adjust_set_top, tied
+"rear spar".slave_surf_top, "upper cover".master_surf
+** Interaction: upper stringer 1
+*Contact Pair, interaction="surf2surf property", type=SURFACE TO SURFACE, adjust="upper stringer 1".adjust_set, tied
+"upper stringer 1".slave_surf, "upper cover".master_surf
+** Interaction: upper stringer 2
+*Contact Pair, interaction="surf2surf property", type=SURFACE TO SURFACE, adjust="upper stringer 2".adjust_set, tied
+"upper stringer 2".slave_surf, "upper cover".master_surf
+** Interaction: upper stringer 3
+*Contact Pair, interaction="surf2surf property", type=SURFACE TO SURFACE, adjust="upper stringer 3".adjust_set, tied
+"upper stringer 3".slave_surf, "upper cover".master_surf
+** Interaction: upper stringer 4
+*Contact Pair, interaction="surf2surf property", type=SURFACE TO SURFACE, adjust="upper stringer 4".adjust_set, tied
+"upper stringer 4".slave_surf, "upper cover".master_surf
+** Interaction: upper stringer 5
+*Contact Pair, interaction="surf2surf property", type=SURFACE TO SURFACE, adjust="upper stringer 5".adjust_set, tied
+"upper stringer 5".slave_surf, "upper cover".master_surf
+** Interaction: upper stringer 6
+*Contact Pair, interaction="surf2surf property", type=SURFACE TO SURFACE, adjust="upper stringer 6".adjust_set, tied
+"upper stringer 6".slave_surf, "upper cover".master_surf
+** Interaction: upper stringer 7
+*Contact Pair, interaction="surf2surf property", type=SURFACE TO SURFACE, adjust="upper stringer 7".adjust_set, tied
+"upper stringer 7".slave_surf, "upper cover".master_surf
+** Interaction: upper stringer 8
+*Contact Pair, interaction="surf2surf property", type=SURFACE TO SURFACE, adjust="upper stringer 8".adjust_set, tied
+"upper stringer 8".slave_surf, "upper cover".master_surf
+** Interaction: upper stringer 9
+*Contact Pair, interaction="surf2surf property", type=SURFACE TO SURFACE, adjust="upper stringer 9".adjust_set, tied
+"upper stringer 9".slave_surf, "upper cover".master_surf
+** Interaction: upper stringer 10
+*Contact Pair, interaction="surf2surf property", type=SURFACE TO SURFACE, adjust="upper stringer 10".adjust_set, tied
+"upper stringer 10".slave_surf, "upper cover".master_surf
+** Interaction: upper stringer 11
+*Contact Pair, interaction="surf2surf property", type=SURFACE TO SURFACE, adjust="upper stringer 11".adjust_set, tied
+"upper stringer 11".slave_surf, "upper cover".master_surf
+** Interaction: upper stringer 12
+*Contact Pair, interaction="surf2surf property", type=SURFACE TO SURFACE, adjust="upper stringer 12".adjust_set, tied
+"upper stringer 12".slave_surf, "upper cover".master_surf
+** Interaction: upper stringer 13
+*Contact Pair, interaction="surf2surf property", type=SURFACE TO SURFACE, adjust="upper stringer 13".adjust_set, tied
+"upper stringer 13".slave_surf, "upper cover".master_surf
+** Interaction: upper stringer 14
+*Contact Pair, interaction="surf2surf property", type=SURFACE TO SURFACE, adjust="upper stringer 14".adjust_set, tied
+"upper stringer 14".slave_surf, "upper cover".master_surf
+** Interaction: upper stringer 15
+*Contact Pair, interaction="surf2surf property", type=SURFACE TO SURFACE, adjust="upper stringer 15".adjust_set, tied
+"upper stringer 15".slave_surf, "upper cover".master_surf
+** Interaction: upper stringer 16
+*Contact Pair, interaction="surf2surf property", type=SURFACE TO SURFACE, adjust="upper stringer 16".adjust_set, tied
+"upper stringer 16".slave_surf, "upper cover".master_surf
+** Interaction: upper stringer 17
+*Contact Pair, interaction="surf2surf property", type=SURFACE TO SURFACE, adjust="upper stringer 17".adjust_set, tied
+"upper stringer 17".slave_surf, "upper cover".master_surf
+** Interaction: upper stringer 18
+*Contact Pair, interaction="surf2surf property", type=SURFACE TO SURFACE, adjust="upper stringer 18".adjust_set, tied
+"upper stringer 18".slave_surf, "upper cover".master_surf
+** Interaction: upper stringer 19
+*Contact Pair, interaction="surf2surf property", type=SURFACE TO SURFACE, adjust="upper stringer 19".adjust_set, tied
+"upper stringer 19".slave_surf, "upper cover".master_surf
+** Interaction: upper stringer 20
+*Contact Pair, interaction="surf2surf property", type=SURFACE TO SURFACE, adjust="upper stringer 20".adjust_set, tied
+"upper stringer 20".slave_surf, "upper cover".master_surf
+** Interaction: upper stringer 21
+*Contact Pair, interaction="surf2surf property", type=SURFACE TO SURFACE, adjust="upper stringer 21".adjust_set, tied
+"upper stringer 21".slave_surf, "upper cover".master_surf
+** Interaction: upper stringer 22
+*Contact Pair, interaction="surf2surf property", type=SURFACE TO SURFACE, adjust="upper stringer 22".adjust_set, tied
+"upper stringer 22".slave_surf, "upper cover".master_surf
+** ----------------------------------------------------------------
+** 

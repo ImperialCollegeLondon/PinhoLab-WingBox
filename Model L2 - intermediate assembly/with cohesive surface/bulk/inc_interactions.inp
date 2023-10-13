@@ -1,0 +1,62 @@
+** INTERACTION PROPERTIES
+** 
+*Surface Interaction, name=cohesive
+1.,
+*Cohesive Behavior
+ 1e+06, 1e+06, 1e+06
+*Damage Initiation, criterion=MAXS
+61., 49.8, 49.8
+*Damage Evolution, type=ENERGY, mixed mode behavior=BK, power=8.
+ 0.9, 2.5, 2.5
+*Damage Stabilization
+0.001
+*Surface Interaction, name=non_cohesive
+1.,
+*Cohesive Behavior
+ 1e+07, 1e+07, 1e+07
+*Damage Initiation, criterion=MAXS
+100000.,100000.,100000.
+** 
+** INTERACTIONS
+** 
+** Interaction: spar_tied
+*Contact Pair, interaction=non_cohesive, small sliding, type=SURFACE TO SURFACE, adjust="rear spar".adjust_set_top, tied
+"rear spar".slave_surf_top, "upper cover".master_surf
+** Interaction: stringer15_cohesive
+*Contact Pair, interaction=cohesive, small sliding, type=SURFACE TO SURFACE, adjust="upper stringer 15".adjust_set
+"upper stringer 15".slave_surf, "upper cover".master_surf
+** Interaction: stringer15_tied
+*Contact Pair, interaction=non_cohesive, small sliding, adjust="upper stringer 15".slave2
+"upper stringer 15_slave2_CNS_", "upper cover".master_surf
+** Interaction: stringer16_cohesive
+*Contact Pair, interaction=cohesive, small sliding, type=SURFACE TO SURFACE, adjust="upper stringer 16".adjust_set
+"upper stringer 16".slave_surf, "upper cover".master_surf
+** Interaction: stringer16_tied
+*Contact Pair, interaction=non_cohesive, small sliding, adjust="upper stringer 16".slave2
+"upper stringer 16_slave2_CNS_", "upper cover".master_surf
+** Interaction: stringer17_cohesive
+*Contact Pair, interaction=cohesive, small sliding, type=SURFACE TO SURFACE, adjust="upper stringer 17".adjust_set
+"upper stringer 17".slave_surf, "upper cover".master_surf
+** Interaction: stringer17_tied
+*Contact Pair, interaction=non_cohesive, small sliding, adjust="upper stringer 17".slave2
+"upper stringer 17_slave2_CNS_", "upper cover".master_surf
+** Interaction: stringer19_cohesive
+*Contact Pair, interaction=cohesive, small sliding, type=SURFACE TO SURFACE, adjust="upper stringer 19".adjust_set
+"upper stringer 19".slave_surf, "upper cover".master_surf
+** Interaction: stringer19_tied
+*Contact Pair, interaction=non_cohesive, small sliding, adjust="upper stringer 19".slave2
+"upper stringer 19_slave2_CNS_", "upper cover".master_surf
+** Interaction: stringer20_cohesive
+*Contact Pair, interaction=cohesive, small sliding, type=SURFACE TO SURFACE, adjust="upper stringer 20".adjust_set
+"upper stringer 20".slave_surf, "upper cover".master_surf
+** Interaction: stringer20_tied
+*Contact Pair, interaction=non_cohesive, small sliding, adjust="upper stringer 20".slave2
+"upper stringer 20_slave2_CNS_", "upper cover".master_surf
+** Interaction: stringer21_cohesive
+*Contact Pair, interaction=cohesive, small sliding, type=SURFACE TO SURFACE, adjust="upper stringer 21".adjust_set
+"upper stringer 21".slave_surf, "upper cover".master_surf
+** Interaction: stringer21_tied
+*Contact Pair, interaction=non_cohesive, small sliding, adjust="upper stringer 21".slave2
+"upper stringer 21_slave2_CNS_", "upper cover".master_surf
+** ----------------------------------------------------------------
+** 

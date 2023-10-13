@@ -1,0 +1,75 @@
+** STEP: Step-1
+** 
+*Step, name=Step-1, nlgeom=YES, inc=200
+*Static, stabilize, allsdtol=0.05, continue=YES
+0.1, 0.7, 1e-07, 0.1
+** 
+** BOUNDARY CONDITIONS
+** 
+** Name: BC-1 Type: Submodel
+*Boundary, submodel, step=1
+bc, 1, 1
+bc, 2, 2
+bc, 3, 3
+** 
+** CONTROLS
+** 
+*Controls, reset
+*Controls, analysis=discontinuous
+*Controls, parameters=line search
+5, , , , 
+** 
+** OUTPUT REQUESTS
+** 
+*Restart, write, frequency=0
+** 
+** FIELD OUTPUT: F-Output-1
+** 
+*Output, field
+*Node Output
+CF, RF, U
+*Element Output, directions=YES
+LE, S
+*Contact Output
+CDISP, CSDMG, CSMAXSCRT, CSTRESS
+** 
+** HISTORY OUTPUT: H-Output-1
+** 
+*Output, history, variable=PRESELECT
+*End Step
+** ----------------------------------------------------------------
+** 
+** STEP: Step-2
+** 
+*Step, name=Step-2, nlgeom=YES, inc=500
+*Static, stabilize, allsdtol=0.05, continue=YES
+0.05, 0.3, 1e-08, 0.1
+** 
+** BOUNDARY CONDITIONS
+** 
+** Name: BC-1 Type: Submodel
+*Boundary, op=NEW
+** Name: BC-2 Type: Submodel
+*Boundary, op=NEW, submodel, step=2
+bc, 1, 1
+bc, 2, 2
+bc, 3, 3
+** 
+** OUTPUT REQUESTS
+** 
+*Restart, write, frequency=0
+** 
+** FIELD OUTPUT: F-Output-1
+** 
+*Output, field, frequency=5
+*Node Output
+CF, RF, U
+*Element Output, directions=YES
+LE, S
+*Contact Output
+CDISP, CSDMG, CSMAXSCRT, CSTRESS
+** 
+** HISTORY OUTPUT: H-Output-1
+** 
+*Output, history, variable=PRESELECT
+*End Step

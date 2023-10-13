@@ -1,0 +1,23 @@
+*Assembly, name=Assembly
+**  
+*Instance, name="rib 4", part="rib 4"
+*End Instance
+**  
+*Instance, name="upper cover", part="upper cover"
+*End Instance
+**  
+*Instance, name="upper stringer 21", part="upper stringer 21"
+*End Instance
+**  
+*Surface, type=NODE, name="upper stringer 21_adjust_set_2_CNS_", internal
+"upper stringer 21".adjust_set_2, 1.
+*Surface, type=NODE, name="rib 4_bottom_CNS_", internal
+"rib 4".bottom, 1.
+** Constraint: cover-rib
+*Tie, name=cover-rib, adjust=yes, type=NODE TO SURFACE
+"rib 4_bottom_CNS_", "upper cover".master_surf
+*Submodel, type=NODE, exteriorTolerance=0.05
+"upper cover".bc, 
+"rib 4".submodel, 
+"upper stringer 21".bc, 
+*End Assembly

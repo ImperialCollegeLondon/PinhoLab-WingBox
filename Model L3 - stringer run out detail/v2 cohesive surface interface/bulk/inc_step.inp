@@ -1,0 +1,97 @@
+** STEP: Step-1
+** 
+*Step, name=Step-1, nlgeom=YES
+*Static
+0.1, 0.7, 1e-07, 0.1
+** 
+** BOUNDARY CONDITIONS
+** 
+** Name: cover_step1, rib_step1, stringer_step1 Type: Submodel
+*Boundary, submodel, step=1
+"upper cover".bc, 1, 1
+"upper cover".bc, 2, 2
+"upper cover".bc, 3, 3
+"rib 4".submodel, 1, 1
+"rib 4".submodel, 2, 2
+"rib 4".submodel, 3, 3
+"rib 4".submodel, 4, 4
+"rib 4".submodel, 5, 5
+"rib 4".submodel, 6, 6
+"upper stringer 21".bc, 1, 1
+"upper stringer 21".bc, 2, 2
+"upper stringer 21".bc, 3, 3
+** 
+** CONTROLS
+** 
+*Controls, reset
+*Controls, analysis=discontinuous
+*Controls, parameters=line search
+5, , , , 
+** 
+** OUTPUT REQUESTS
+** 
+*Restart, write, frequency=0
+** 
+** FIELD OUTPUT: F-Output-1
+** 
+*Output, field
+*Node Output
+CF, RF, U
+*Element Output, directions=YES
+LE, S
+*Contact Output
+CDISP, CFORCE, CSDMG, CSMAXSCRT, CSTATUS, CSTRESS
+** 
+** HISTORY OUTPUT: H-Output-1
+** 
+*Output, history, variable=PRESELECT
+*End Step
+** ----------------------------------------------------------------
+** 
+** STEP: Step-2
+** 
+*Step, name=Step-2, nlgeom=YES
+*Static
+0.01, 0.3, 1e-07, 0.01
+** 
+** BOUNDARY CONDITIONS
+** 
+** Name: cover_step1 Type: Submodel
+*Boundary, op=NEW
+** Name: rib_step1 Type: Submodel
+*Boundary, op=NEW
+** Name: stringer_step1 Type: Submodel
+*Boundary, op=NEW
+** Name: cover_step2, rib_step2, stringer_step2 Type: Submodel
+*Boundary, op=NEW, submodel, step=2
+"upper cover".bc, 1, 1
+"upper cover".bc, 2, 2
+"upper cover".bc, 3, 3
+"rib 4".submodel, 1, 1
+"rib 4".submodel, 2, 2
+"rib 4".submodel, 3, 3
+"rib 4".submodel, 4, 4
+"rib 4".submodel, 5, 5
+"rib 4".submodel, 6, 6
+"upper stringer 21".bc, 1, 1
+"upper stringer 21".bc, 2, 2
+"upper stringer 21".bc, 3, 3
+** 
+** OUTPUT REQUESTS
+** 
+*Restart, write, frequency=0
+** 
+** FIELD OUTPUT: F-Output-1
+** 
+*Output, field
+*Node Output
+CF, RF, U
+*Element Output, directions=YES
+LE, S
+*Contact Output
+CDISP, CFORCE, CSDMG, CSMAXSCRT, CSTATUS, CSTRESS
+** 
+** HISTORY OUTPUT: H-Output-1
+** 
+*Output, history, variable=PRESELECT
+*End Step

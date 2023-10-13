@@ -1,0 +1,12 @@
+** MATERIALS
+** 
+*Material, name=aluminum
+*Elastic
+70000., 0.33
+*Material, name=cfrp
+*Elastic, type=LAMINA
+165000.,8400., 0.34,5600.,4200.,3500.
+*Material, name=larc_cfrp
+*Elastic, type=LAMINA
+165000.,8400., 0.34,5600.,4200.,3500.
+** 

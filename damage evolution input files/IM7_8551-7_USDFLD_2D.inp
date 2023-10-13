@@ -1,0 +1,47 @@
+**
+** Contents of the material card for USDFLD
+** Material IM7_8551-7 (ID 3) from reference Pinho et al 2013 issue -
+** File created on 15/05/2021 16:01:21
+**
+** Material field table
+*ELASTIC, DEPENDENCIES=3, TYPE=LAMINA
+  1.6500E+5,  8.4000E+3,  3.4000E-1,  5.6000E+3,  4.2000E+3,  3.5000E+3, ,  0.0000E+0, 
+   0.0000E+0,  0.0000E+0
+  1.6500E+2,  8.4000E+3,  3.4000E-4,  5.6000E+3,  4.2000E+3,  3.5000E+3, ,  9.9900E-1, 
+   0.0000E+0,  0.0000E+0
+  1.6500E+5,  8.4000E+0,  3.4000E-1,  5.6000E+3,  4.2000E+3,  3.5000E+3, ,  0.0000E+0, 
+   9.9900E-1,  0.0000E+0
+  1.6500E+2,  8.4000E+0,  3.4000E-4,  5.6000E+3,  4.2000E+3,  3.5000E+3, ,  9.9900E-1, 
+   9.9900E-1,  0.0000E+0
+  1.6500E+5,  8.4000E+3,  3.4000E-1,  5.6000E+0,  4.2000E+0,  3.5000E+0, ,  0.0000E+0, 
+   0.0000E+0,  9.9900E-1
+  1.6500E+2,  8.4000E+3,  3.4000E-4,  5.6000E+0,  4.2000E+0,  3.5000E+0, ,  9.9900E-1, 
+   0.0000E+0,  9.9900E-1
+  1.6500E+5,  8.4000E+0,  3.4000E-1,  5.6000E+0,  4.2000E+0,  3.5000E+0, ,  0.0000E+0, 
+   9.9900E-1,  9.9900E-1
+  1.6500E+2,  8.4000E+0,  3.4000E-4,  5.6000E+0,  4.2000E+0,  3.5000E+0, ,  9.9900E-1, 
+   9.9900E-1,  9.9900E-1
+**
+** LaRC05 property table
+*PROPERTY TABLE, TYPE=LARC05PROPERTIES
+  1.6500E+5,  8.4000E+3,  3.4000E-1,  5.6000E+3,  2.5600E+3,  1.5900E+3,  7.3000E+1,  1.8500E+2, 
+   9.0000E+1,  5.3000E+1,  8.2000E-2, -1.0000E+0,  6.0000E+1, -1.0000E+0,  2.1000E-1,  8.0000E-1, 
+   9.2000E+1,  8.0000E+1,  1.2100E+0,  1.6500E+5,  8.4000E+3,  3.4000E-1,  5.0000E-1,  4.2000E+3, 
+   3.5000E+3,  1.0000E-3
+**
+** Solution dependent variables for 2D with max FI output
+*DEPVAR
+ 9,
+ 1,   FI_1_Matrix,    "Matrix cracking" 
+ 2,   FI_2_Split,     "Matrix splitting " 
+ 3,   FI_3_FibreTen,  "Fibre tension" 
+ 4,   FI_4_Kink,      "Fibre kinking" 
+ 5,   DMG_1_Matrix,   "Damage for matrix cracking" 
+ 6,   DMG_2_Split,    "Damage for matrix splitting" 
+ 7,   DMG_3_FibreTen, "Damage for tensile fibre failure" 
+ 8,   DMG_4_Kink,     "Damage for fibre kinking" 
+ 9,   FI_MAX_2D,      "Max failure index value" 
+**
+** User defined field
+*USER DEFINED FIELD
+**

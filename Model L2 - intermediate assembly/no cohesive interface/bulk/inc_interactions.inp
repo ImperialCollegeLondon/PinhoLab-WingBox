@@ -1,0 +1,30 @@
+** INTERACTION PROPERTIES
+** 
+*Surface Interaction, name=IntProp-1
+1.,
+** 
+** INTERACTIONS
+** 
+** Interaction: Int-1
+*Contact Pair, interaction=IntProp-1, small sliding, type=SURFACE TO SURFACE, adjust="upper stringer 15".adjust_set, tied
+"upper stringer 15".slave_surf, "upper cover".master_surf
+** Interaction: Int-2
+*Contact Pair, interaction=IntProp-1, small sliding, type=SURFACE TO SURFACE, adjust="upper stringer 16".adjust_set, tied
+"upper stringer 16".slave_surf, "upper cover".master_surf
+** Interaction: Int-3
+*Contact Pair, interaction=IntProp-1, small sliding, type=SURFACE TO SURFACE, adjust="upper stringer 17".adjust_set, tied
+"upper stringer 17".slave_surf, "upper cover".master_surf
+** Interaction: Int-4
+*Contact Pair, interaction=IntProp-1, small sliding, type=SURFACE TO SURFACE, adjust="upper stringer 19".adjust_set, tied
+"upper stringer 19".slave_surf, "upper cover".master_surf
+** Interaction: Int-5
+*Contact Pair, interaction=IntProp-1, small sliding, type=SURFACE TO SURFACE, adjust="upper stringer 20".adjust_set, tied
+"upper stringer 20".slave_surf, "upper cover".master_surf
+** Interaction: Int-6
+*Contact Pair, interaction=IntProp-1, small sliding, type=SURFACE TO SURFACE, adjust="upper stringer 21".adjust_set, tied
+"upper stringer 21".slave_surf, "upper cover".master_surf
+** Interaction: Int-7
+*Contact Pair, interaction=IntProp-1, small sliding, type=SURFACE TO SURFACE, adjust="rear spar".adjust_set_top, tied
+"rear spar".slave_surf_top, "upper cover".master_surf
+** ----------------------------------------------------------------
+** 

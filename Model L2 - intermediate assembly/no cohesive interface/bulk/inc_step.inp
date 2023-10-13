@@ -1,0 +1,94 @@
+** STEP: Step-1
+** 
+*Step, name=Step-1, nlgeom=YES, inc=500
+*Static, stabilize, allsdtol
+0.1, 0.7, 1e-07, 0.1
+**
+*Controls, Reset 
+*Controls, Parameters = Time Incrementation
+8,10, , , , , ,30, 
+** 
+** BOUNDARY CONDITIONS
+** 
+** Name: BC-1, BC-2, BC-3, BC-4 Type: Submodel
+*Boundary, submodel, step=1
+"upper cover".bc, 1, 1
+"upper cover".bc, 2, 2
+"upper cover".bc, 3, 3
+bc_stringers, 1, 1
+bc_stringers, 2, 2
+bc_stringers, 3, 3
+bc_ribs, 1, 1
+bc_ribs, 2, 2
+bc_ribs, 3, 3
+bc_ribs, 4, 4
+bc_ribs, 5, 5
+bc_ribs, 6, 6
+"rear spar".bc, 1, 1
+"rear spar".bc, 2, 2
+"rear spar".bc, 3, 3
+** 
+** OUTPUT REQUESTS
+** 
+*Restart, write, frequency=0
+** 
+** FIELD OUTPUT: F-Output-1
+** 
+*Output, field, variable=PRESELECT
+** 
+** HISTORY OUTPUT: H-Output-1
+** 
+*Output, history, variable=PRESELECT
+*End Step
+** ----------------------------------------------------------------
+** 
+** STEP: Step-2
+** 
+*Step, name=Step-2, nlgeom=YES, inc=500
+*Static, stabilize, allsdtol
+0.05, 0.3, 1e-07, 0.05
+**
+*Controls, Reset 
+*Controls, Parameters = Time Incrementation
+8,10, , , , , ,30, 
+** 
+** BOUNDARY CONDITIONS
+** 
+** Name: BC-1 Type: Submodel
+*Boundary, op=NEW
+** Name: BC-2 Type: Submodel
+*Boundary, op=NEW
+** Name: BC-3 Type: Submodel
+*Boundary, op=NEW
+** Name: BC-4 Type: Submodel
+*Boundary, op=NEW
+** Name: BC-1-2, BC-2-2, BC-3-2, BC-4-2 Type: Submodel
+*Boundary, op=NEW, submodel, step=2
+"upper cover".bc, 1, 1
+"upper cover".bc, 2, 2
+"upper cover".bc, 3, 3
+bc_stringers, 1, 1
+bc_stringers, 2, 2
+bc_stringers, 3, 3
+bc_ribs, 1, 1
+bc_ribs, 2, 2
+bc_ribs, 3, 3
+bc_ribs, 4, 4
+bc_ribs, 5, 5
+bc_ribs, 6, 6
+"rear spar".bc, 1, 1
+"rear spar".bc, 2, 2
+"rear spar".bc, 3, 3
+** 
+** OUTPUT REQUESTS
+** 
+*Restart, write, frequency=0
+** 
+** FIELD OUTPUT: F-Output-1
+** 
+*Output, field, variable=PRESELECT
+** 
+** HISTORY OUTPUT: H-Output-1
+** 
+*Output, history, variable=PRESELECT
+*End Step

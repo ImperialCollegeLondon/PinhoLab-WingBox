@@ -1,0 +1,31 @@
+** INTERACTION PROPERTIES
+** 
+*Surface Interaction, name=cohesive
+1.,
+*Cohesive Behavior
+ 1e+06, 1e+06, 1e+06
+*Damage Initiation, criterion=MAXS
+61., 49.8, 49.8
+*Damage Evolution, type=ENERGY, mixed mode behavior=BK, power=8.
+ 0.9, 2.5, 2.5
+*Damage Stabilization
+0.001
+*Surface Interaction, name="cohesive tied"
+1.,
+*Cohesive Behavior
+ 1e+06, 1e+06, 1e+06
+*Damage Initiation, criterion=MAXS
+100000.,100000.,100000.
+*Surface Interaction, name=tied
+1.,
+** 
+** INTERACTIONS
+** 
+** Interaction: Int-1
+*Contact Pair, interaction=cohesive, small sliding, type=SURFACE TO SURFACE, adjust="upper stringer 20".adjust_set
+"upper stringer 20".slave_surf, "upper cover".master_surf
+** Interaction: Int-2
+*Contact Pair, interaction="cohesive tied", small sliding, type=SURFACE TO SURFACE, adjust="upper stringer 20".adjust_set2
+"upper stringer 20_adjust_set2_CNS_", "upper cover".master_surf
+** ----------------------------------------------------------------
+** 

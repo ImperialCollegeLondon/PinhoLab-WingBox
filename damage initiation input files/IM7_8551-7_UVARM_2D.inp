@@ -1,0 +1,18 @@
+**
+** Contents of the material card for UVARM only
+** Material IM7_8551-7 (ID 3) from reference Pinho et al 2013 issue -
+** File created on 09/03/2020 09:43:50
+**
+** Material behaviour
+*ELASTIC, TYPE=LAMINA 
+  1.6500E+5,  8.4000E+3,  3.4000E-1,  5.6000E+3,  4.2000E+3,  3.5000E+3
+** LaRC05 property table
+*PROPERTY TABLE, TYPE=LARC05PROPERTIES
+  1.6500E+5,  8.4000E+3,  3.4000E-1,  5.6000E+3,  2.5600E+3,  1.5900E+3,  7.3000E+1,  1.8500E+2, 
+   9.0000E+1,  5.3000E+1,  8.2000E-2, -1.0000E+0,  6.0000E+1, -1.0000E+0,  2.1000E-1,  8.0000E-1, 
+   9.2000E+1,  8.0000E+1,  1.2100E+0,  1.6500E+5,  8.4000E+3,  3.4000E-1,  5.0000E-1,  4.2000E+3, 
+   3.5000E+3, -1.0000E+0
+** User output
+*USER OUTPUT VARIABLES
+ 7
+**

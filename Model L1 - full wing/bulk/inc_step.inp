@@ -1,0 +1,44 @@
+** STEP: Step-1
+** 
+*Step, name=Step-1, nlgeom=YES
+*Static
+0.1, 1., 1e-05, 1.
+** 
+** BOUNDARY CONDITIONS
+** 
+** Name: root_clamp Type: Displacement/Rotation
+*Boundary
+_PickedSet169, 1, 1
+_PickedSet169, 2, 2
+_PickedSet169, 3, 3
+_PickedSet169, 4, 4
+_PickedSet169, 5, 5
+_PickedSet169, 6, 6
+** 
+** LOADS
+** 
+** Name: Load-1   Type: Pressure
+*Dsload
+"lower cover".load_surf_2, P, 0.2625
+** Name: Load-2   Type: Pressure
+*Dsload
+"lower cover".load_surf_3_1, P, 0.00196875
+** Name: Load-3   Type: Pressure
+*Dsload
+"lower cover".load_surf_3_2, P, 0.13125
+** Name: Load-4   Type: Pressure
+*Dsload
+"lower cover".load_surf_4, P, 0.0525
+** 
+** OUTPUT REQUESTS
+** 
+*Restart, write, frequency=0
+** 
+** FIELD OUTPUT: F-Output-1
+** 
+*Output, field, variable=PRESELECT
+** 
+** HISTORY OUTPUT: H-Output-1
+** 
+*Output, history, variable=PRESELECT
+*End Step

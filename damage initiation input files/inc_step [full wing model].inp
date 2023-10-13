@@ -1,0 +1,30 @@
+*Amplitude, Name = Pressure, Time = Total Time
+0.,0.,10.,10.
+** ==============================================
+** STEP: Step-1
+** ==============================================
+*Step, name=Step-1, nlgeom=YES
+*Static, stabilize, allsdtol
+0.1, 1, 1e-7, 0.1
+**
+*Boundary
+_PickedSet169, 1, 6
+**
+*Dsload, Amplitude = Pressure
+"lower cover".load_surf_2, P, 0.2625
+"lower cover".load_surf_3_1, P, 0.00196875
+"lower cover".load_surf_3_2, P, 0.13125
+"lower cover".load_surf_4, P, 0.0525
+**
+*Restart, write, frequency=1
+** 
+*Output, field, Frequency=1
+*Element Output, ALLSECTIONPTS, elset=full_larc_els
+UVARM, SSAVG, TSHR
+**  
+*Output, field, Frequency=1
+*Node Output
+U 
+** 
+*Output, history, variable=PRESELECT, Frequency=1
+*End Step

@@ -1,0 +1,23 @@
+cff-version: 1.2.0
+title: PinhoLab-WingBox
+message: >-
+  If you use this software, please cite it using the
+  metadata from this file.
+type: dataset
+authors:
+  - given-names: Rui Orlando
+    family-names: Silva Sampaio da Costa
+    email: r.costa18@imperial.ac.uk
+    affiliation: Imperial College London
+    orcid: 'https://orcid.org/0000-0001-6144-3356'
+  - given-names: Silvestre
+    family-names: Taveira Pinho
+    email: silvestre.pinho@imperial.ac.uk
+    affiliation: Imperial College London
+    orcid: 'https://orcid.org/0000-0001-5727-7041'
+repository-code: 'https://github.com/ImperialCollegeLondon/PinhoLab-WingBox'
+keywords:
+  - airbus a350
+  - wingbox
+  - cfrp
+license: BSD-3-Clause
